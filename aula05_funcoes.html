@@ -51,12 +51,64 @@
             nomeEidade('Matheus', 18);
             nomeEidade('David',15);
             nomeEidade('Eitor',4);
+
+
 */
             //Outra forma de declarar uma function: 
-            var func = function(){
+           /* var func = function(){
                 alert ('Olá mundo!!');
             }
             func();
+            */
+
+        /*    function testes (){
+                console.log('Chamando a função testes.');
+            }   
+
+            testes();
+            */
+
+          /*  function teste_5(nome){
+                console.log('O nome passado é: ' + nome);
+            }
+
+            teste_5('Matheus'); */
+
+/*            function nome_idade(nome,idade){
+                console.log('O nome passado é:' + nome);
+                console.log('----------------------');
+                console.log('A idade passada é: ' + idade + 'anos.');
+            }
+            nome_idade('Matheus', 21);
+            */
+
+
+            function pegarNome1(){
+                return "Matheus";
+                //Após o return a função é terminada.
+            }
+            var nome = pegarNome1();
+            console.log(nome);
+
+            function pegarIdade(parametro){
+                if(parametro == 1){
+                    return 21;
+                }else{return 18;}
+            }
+           var idade =  pegarIdade(1);
+           idade = pegarIdade(2);
+            console.log(idade);
+
+            /*
+            //Outra forma de declarar:
+            var funcao = function(){
+                console.log('HELLO WORLD!!');
+            }
+            funcao();
+            // Declara a função dentro da variável.
+            */
+
+            
 
 
 
