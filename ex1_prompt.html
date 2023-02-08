@@ -39,25 +39,25 @@
         if (idade >= 18) {
             situacao = 1;
             idade_situacao();
-            direitos_civis(1);   
+            direitos_civis(1);
         }
         else if (idade > 15 && idade < 18 && situacao == 1) {
             situacao = 1;
             idade_situacao();
             direitos_civis(1);
-            
+
         } else if (idade > 15 && idade < 18 && situacao != 1) {
-           situacao = 2;
+            situacao = 2;
             idade_situacao();
             direitos_civis(2);
-            
+
         } else if (idade < 15 && situacao == 1) {
             situacao = 1;
             idade_situacao();
             direitos_civis(1);
 
-        } else if (idade < 15 && situacao != 1 ) {
-           situacao = 2;
+        } else if (idade < 15 && situacao != 1) {
+            situacao = 2;
             idade_situacao();
             direitos_civis(3);
         }
