@@ -15,48 +15,53 @@
 
         var nome = prompt('Digite seu nome: ');
         var idade = prompt('Digite sua idade: ');
-        if(idade < 18){var situacao = prompt('Emancipado? Sim[1]  Não[qualquer outro número]');}
+        if (idade < 18) { var situacao = prompt('Emancipado? Sim[1]  Não[qualquer outro número]'); }
 
-        function idade_situacao(){
-            console.log('Idade: '+ idade);
-            if(situacao == 1){
+        function idade_situacao() {
+            console.log('Idade: ' + idade);
+            if (situacao == 1) {
                 console.log('Situação: Emancipado');
-            }else{console.log('Situação: Não emancipado');}
-            }
+            } else { console.log('Situação: Não emancipado'); }
+        }
 
-            function direitos_civis(parametro){
-                if(parametro == 1){
-                    console.log('Direitos civis: Plenos');
-                }else if(parametro == 2){
-                    console.log('Direitos civis: Relativos');
-                }else if(parametro == 3){
-                    console.log('Direitos civis: Abstratos.');
-                }
+        function direitos_civis(parametro) {
+            if (parametro == 1) {
+                console.log('Direitos civis: Plenos');
+            } else if (parametro == 2) {
+                console.log('Direitos civis: Relativos');
+            } else if (parametro == 3) {
+                console.log('Direitos civis: Abstratos.');
             }
+        }
 
 
-        
-            if (idade >= 18) {
-                situacao = 1;
-                idade_situacao();
-                direitos_civis(1);
-            }
-           else if (idade > 15 && idade < 18 && situacao == 1) {
-                idade_situacao();
-                direitos_civis(1);
-            } else if(idade > 15 && idade < 18){
-                situacao = 2;
-                idade_situacao();
-                direitos_civis(2);
-            }else if(idade < 15 && situacao == 1){
-                idade_situacao();
-                direitos_civis(1);
-            }else if(idade < 15){
-                situacao = 2;
-                idade_situacao();
-                direitos_civis(3);
-            }
-                
+
+        if (idade >= 18) {
+            situacao = 1;
+            idade_situacao();
+            direitos_civis(1);   
+        }
+        else if (idade > 15 && idade < 18 && situacao == 1) {
+            situacao = 1;
+            idade_situacao();
+            direitos_civis(1);
+            
+        } else if (idade > 15 && idade < 18 && situacao != 1) {
+           situacao = 2;
+            idade_situacao();
+            direitos_civis(2);
+            
+        } else if (idade < 15 && situacao == 1) {
+            situacao = 1;
+            idade_situacao();
+            direitos_civis(1);
+
+        } else if (idade < 15 && situacao != 1 ) {
+           situacao = 2;
+            idade_situacao();
+            direitos_civis(3);
+        }
+
     </script>
 </body>
 
