@@ -1,14 +1,47 @@
 <html>
-    <body>
-        <script>
-            var nome = prompt('Digite seu nome:');
-            var idade = prompt('Digite sua idade:');
-            var cidade = prompt('Digite sua cidade:');
 
-            console.log('Nome: ' + nome);
-            console.log('Idade: ' + idade);
-            console.log('Cidade: ' + cidade);
+<body>
+    <script>
+        /*
+        var nome = prompt('Digite seu nome:');
+        var idade = prompt('Digite sua idade:');
+        var cidade = prompt('Digite sua cidade:');
 
-        </script>
-    </body>
+        console.log('Nome: ' + nome);
+        console.log('Idade: ' + idade);
+        console.log('Cidade: ' + cidade);
+        */
+
+
+        var nome = prompt('Digite seu nome: ');
+        var idade = prompt('Digite sua idade: ');
+        if(idade < 18){var situacao = prompt('Emancipado? Sim[1]  Não[qualquer outro número]');}
+
+        function idade_situacao(){
+            console.log('Idade: '+ idade);
+            if(situacao == 1){
+                console.log('Situação: Emancipado')
+            }else{console.log('Situação: Não emancipado')}
+            
+        }
+        
+            if (idade >= 18) {
+                situacao = 1;
+                idade_situacao();
+            }
+           else if (idade > 15 && idade < 18 && situacao == 1) {
+                idade_situacao();
+            } else if(idade > 15 && idade < 18){
+                situacao = 2;
+                idade_situacao();
+            }else if(idade < 15 && situacao == 1){
+                idade_situacao();
+            }else if(idade < 15){
+                situacao = 2;
+                idade_situacao();
+            }
+                
+    </script>
+</body>
+
 </html>
