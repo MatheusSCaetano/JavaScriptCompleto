@@ -1,0 +1,98 @@
+<html>
+
+<body>
+    <script>
+        /*
+        function Pessoa(){
+            this.nome = 'Matheus';
+            this.idade = 21;
+           
+            this.printNome = function(parametro){ //Criando uma função dentro do objeto;
+                alert(parametro); //O que deverá ser executado pela função;
+            }
+        }
+        var pessoa = new Pessoa(); // Criando o objeto e associando;
+       
+        pessoa.printNome(pessoa.nome); //Executando a function 'printNome' do objeto 'pessoa'.
+
+        var pessoa_2 = new Pessoa();
+        pessoa_2.nome = 'João';
+        pessoa_2.idade = 22;
+
+        //Interagindo entre os objetos :
+
+        pessoa.printNome(pessoa_2.nome); // Dentro da function de um objeto eu consegui executar a variável de outro.
+*/
+
+
+/*
+        //Outra forma de fazer: 
+
+        function Animal(nome, raca){ //Já passo o parâmetro aqui.
+            this.nome = nome; // Associando a variável ao parâmetro
+            this.raca = raca; // Associando a variável ao parâmetro
+        }
+    
+        animal_1 = new Animal('Cachorro', 'Lavrador');  // Dando o valor dos parametros
+        animal_2 = new Animal('Cachorro', 'Vira-lata'); // Dando o valor dos parametros
+
+        alert(animal_1.nome) //Executando a variável que está com o valor dado aos parâmetros.
+        alert(animal_2.nome)
+*/
+
+
+
+
+/*
+        //Também podemos fazer uma validação quando formos definir os parâmetros da variável:
+
+        function Time(nome,posicao){
+            if(nome == undefined){nome = 'São Paulo';} //validando informações na criação do objeto;
+            if(posicao == undefined){posicao = 5 +'º';} //validando informações na criação do objeto;
+           
+            //Validação feita para deixar um valor padrão para as variáveis, quando não for definido.
+
+            this.nome = nome;
+            this.posicao = posicao;
+        }
+
+        time = new Time();
+
+        alert(time.nome);
+*/
+
+        function Pessoa(){
+        this.nome = 'Matheus';
+        this.idade = 21;
+        this.printNome = function(numero){
+            alert(numero);
+        };
+        this.returnAnimal = function(animal){ 
+            return animal;
+ //O parâmetro retorna a variável 'animal', que estará associada à função 'Animal', então quando executar a variável 'animal', ela estará com os valores da function 'Animal'.
+    }
+}      
+        
+
+        function Animal(){
+        this.nome = 'Cachorro';
+        this.raca = 'Bulldog';
+        }
+
+
+        var pessoa = new Pessoa();
+        
+        var animal = new Animal();  
+
+        alert(pessoa.returnAnimal(animal).raca);
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
