@@ -1,0 +1,53 @@
+<html>
+
+<body>
+    <script>
+        class Animal {
+            constructor() {
+                this.nome = 'cachorro';
+            }
+        }
+        animal = new Animal;
+
+        alert(animal.nome);
+
+        // OU
+
+        class Pessoa {
+            constructor(nome) {
+                this.nome = nome;
+            }
+            printNome() {
+                return this.nome; // Função de return para dar print no nome;
+            }
+        }
+        pessoa = new Pessoa('Matheus');
+
+        alert(pessoa.nome);
+
+        alert(pessoa.printNome());
+
+
+        // Fazer 'extends' -> Uma classe herdando tudo que há em outra.
+
+        class Time extends Pessoa {
+            constructor(nome, posicao) {
+                super(nome, posicao); // Faz-se obrigatório colocar o parâmetro que está no objeto pai para que a função seja executada.
+            }
+            printPosicao() {
+                return this.posicao;
+            }
+        }
+        time = new Time('São Paulo');
+        time.posicao = (5 + 'º lugar');
+
+        alert(time.printNome());
+        alert(time.printPosicao());
+        //Mesmo não tendo feito as funções de retorno nesse objeto, por conta do 'return' ele herdou essas
+        //funções do objeto 'Pessoa', mas isso não impede que eu crie outras funcionalidades dentro dele;
+
+
+    </script>
+</body>
+
+</html>
