@@ -1,10 +1,31 @@
 <html>
     <body>
         <script>
-            
+/*
+            var date = new Date();
+            //Dia do mês:
+            alert(date.getDate());
 
+            //Dia da semana:
+            alert(date.getDay());
 
+            //Horas:
+            alert(date.getHours());
 
+            //Minutos:
+            alert(date.getMinutes());
+*/  
+                
+
+            //Diferença entre datas:
+
+            var date = new Date('02/10/2023');
+
+            var date_2 = new Date('02/12/2023');
+
+            var diferenca = (date_2.getTime() - date.getTime()) / (1000 * 3600 * 24);
+
+            alert(diferenca);
 
 
         </script>

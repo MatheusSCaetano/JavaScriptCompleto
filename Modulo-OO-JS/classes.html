@@ -2,6 +2,8 @@
 
 <body>
     <script>
+ 
+ /*
         class Animal {
             constructor() {
                 this.nome = 'cachorro';
@@ -45,8 +47,30 @@
         alert(time.printPosicao());
         //Mesmo não tendo feito as funções de retorno nesse objeto, por conta do 'return' ele herdou essas
         //funções do objeto 'Pessoa', mas isso não impede que eu crie outras funcionalidades dentro dele;
+*/
 
 
+                //Treinando um pouco:
+
+
+        class Carro{
+            constructor(nome,marca){
+                this.nome = nome;
+                this.marca = marca;
+            }
+            printNome() {
+                return this.nome;
+            }
+            printMarca() {
+                return this.marca;
+            }        
+        }
+            carro = new Carro('Palio');
+            carro.marca = ('Fiat')
+
+            alert(carro.printNome());
+
+            alert(carro.printMarca());
     </script>
 </body>
 

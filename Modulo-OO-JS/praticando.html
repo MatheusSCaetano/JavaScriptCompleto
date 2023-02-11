@@ -1,0 +1,53 @@
+<html>
+
+<body>
+    <script>
+        class Aluno_1 {
+            constructor(nome, turma, situacao,nota_corte) {
+                this.nome = nome;
+                this.turma = turma;
+                this.media = 6;
+                this.situacao;
+                this.nota_corte;
+            }
+            printNome() {
+                return 'Nome: ' + this.nome;
+            }
+            printTurma() {
+                return 'Turma: ' +  this.turma;
+            }
+            printSituacao() {
+                if (this.media >= 7) {
+                    console.log('Média: ' +this.media);
+                    console.log(this.situacao = 'Aprovado');
+                } else if (this.media < 4) {
+                    console.log('Média: ' + this.media);
+                    console.log(this.situacao = 'Reprovado');
+                } else {
+                    console.log('Média: ' + this.media);
+                    console.log(this.situacao = 'Recuperação');
+                }
+                if(this.situacao == 'Recuperação'){
+                   this.nota_corte = (7 - this.media) + 7;
+                    console.log('Você precisará de uma nota '+  this.nota_corte + ' para passar de ano.');
+                    console.log('Boa sorte!!');
+                }
+            }
+        }
+
+        aluno_1 = new Aluno_1;
+        aluno_1.nome = ('Matheus');
+        aluno_1.turma = ('6º ano');
+    
+
+        console.log(aluno_1.printNome());
+        console.log(aluno_1.printTurma());
+        console.log(aluno_1.printSituacao());
+
+
+
+
+    </script>
+</body>
+
+</html>
