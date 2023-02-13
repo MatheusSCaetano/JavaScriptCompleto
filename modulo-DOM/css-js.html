@@ -1,0 +1,57 @@
+<html>
+
+<body>
+    <!--  <div id="box"> </div> -->
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+</body>
+
+
+<script>
+
+
+    /*
+    var el = document.getElementById('box');
+    el.style.height = 200;
+    el.style.width = 200;
+    el.style.backgroundColor = 'red';
+    el.style.marginLeft = 100;
+    */
+    // Criando uma variávvel 'el' de elemento para manipular a div criada no body acima;
+    // Através do 'getElementById' podemos referenciar qual o segmeento que será manipulado através das tags; 
+
+    // ------------------------------------------------------------------------------------]
+
+
+    var elementos = document.getElementsByClassName('box');
+
+    for (var i = 0; i < elementos.length; i++) {
+        var el = elementos[i];
+        el.style.height = 200;
+        el.style.width = 200;
+        el.style.backgroundColor = 'red';
+        el.style.marginLeft = 200;
+        el.style.marginTop = 10;
+        el.style.borderWidth = 2;
+        el.style.borderColor = 'green';
+        el.style.borderStyle = 'solid';
+        //Nesse caso aproveitamos o que já haviamos feito transmitindo os elementos da variável 'elementos' para o 'el' que já tinha tags escritas;
+        
+    }
+
+
+
+     // -------------------------------------------------------------
+
+
+
+</script>
+
+
+</html>
