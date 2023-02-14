@@ -1,0 +1,86 @@
+<html>
+
+<body>
+<!--    <div class="box"> </div> -->
+
+<div class="conteudo">
+    <h2>Título do conteúdo<span>Ver mais...</span></h2>
+    <p> Apesar de pouco ter jogado na Argentina (atuou só por Lanús, Chacarita Jrs e Colón no país), 
+        Cano passou a ser mais conhecido em sua terra natal após se destacar no futebol colombiano e,
+         principalmente, no brasileiro. Inclusive na temporada passada, quando marcou 44 gols, o atacante 
+         foi tema de debate em programas esportivos locais se merecia uma vaga na seleção argentina na
+          Copa do Mundo. Ele não foi convocado, mas esteve no Catar e viu de perto o título mundial da 
+          Albiceleste..Apesar de pouco ter jogado na Argentina (atuou só por Lanús, Chacarita Jrs e Colón no país), 
+          Cano passou a ser mais conhecido em sua terra natal após se destacar no futebol colombiano e,
+           principalmente, no brasileiro. Inclusive na temporada passada, quando marcou 44 gols, o atacante 
+           foi tema de debate em programas esportivos locais se merecia uma vaga na seleção argentina na
+            Copa do Mundo. Ele não foi convocado, mas esteve no Catar e viu de perto o título mundial da 
+            Albiceleste..Apesar de pouco ter jogado na Argentina (atuou só por Lanús, Chacarita Jrs e Colón no país), 
+            Cano passou a ser mais conhecido em sua terra natal após se destacar no futebol colombiano e,
+             principalmente, no brasileiro. Inclusive na temporada passada, quando marcou 44 gols, o atacante 
+             foi tema de debate em programas esportivos locais se merecia uma vaga na seleção argentina na
+              Copa do Mundo. Ele não foi convocado, mas esteve no Catar e viu de perto o título mundial da 
+              Albiceleste..</p>
+</div>
+
+    <style>
+       /* .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-left: 0;
+        }
+        .animEsquerda{
+            transition: 1s;
+            margin-left: 50px;
+            background-color: green;
+            
+        }*/
+
+        .conteudo h2 span{
+            font-size: 13px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .conteudo p{
+            overflow: hidden;
+            height: 10px;
+            transition: 1s;
+        }
+        .mostrar{
+            height: 200px !important;
+        }
+
+    </style>
+
+    <script>
+    // var box = document.querySelectorAll('.box')[0];
+    
+    /* setTimeout(()=>{
+        box.classList.add('animEsquerda');
+    },1000); */
+/*
+    box.addEventListener('click',()=>{  // '=>' É a mesma coisa que abrir uma finction, onde o 'click' é o parâmetro de execução;
+    box.classList.add('animEsquerda'); //Estou fazendo a mesma execução do que está acima, porém aqui a execução depende do click;
+    })
+*/
+//--------------------------------------------------------------------------------------------------
+  var span = document.querySelector('.conteudo span');
+  
+  span.addEventListener('click', function(){
+    var conteudo = document.querySelector('.conteudo p');
+    if(conteudo.classList.contains('mostrar')){
+        span.innerHTML = 'Ver mais';
+
+        conteudo.classList.remove('mostrar');
+    }else{span.innerHTML = 'Ver menos';
+        conteudo.classList.add('mostrar');}
+  });
+  
+  
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<html>
+
+<body>
+    <div class="conteudo">
+        <h2>Titulo do Texto<span>Ver mais...</span></h2>
+        <p>Apesar de pouco ter jogado na Argentina (atuou só por Lanús, Chacarita Jrs e Colón no país)
+            , Cano passou a ser mais conhecido em sua terra natal após se destacar no futebol
+            colombiano e, principalmente, no brasileiro. Inclusive na temporada passada, quando marcou
+            44 gols, o atacante foi tema de debate em programas esportivos locais se merecia uma vaga
+            na seleção argentina na Copa do Mundo. Ele não foi convocado, mas esteve no Catar e
+            viu de perto o título mundial da Albiceleste.Apesar de pouco ter jogado na Argentina (atuou só por Lanús,
+            Chacarita Jrs e Colón no país)
+            , Cano passou a ser mais conhecido em sua terra natal após se destacar no futebol
+            colombiano e, principalmente, no brasileiro. Inclusive na temporada passada, quando marcou
+            44 gols, o atacante foi tema de debate em programas esportivos locais se merecia uma vaga
+            na seleção argentina na Copa do Mundo. Ele não foi convocado, mas esteve no Catar e
+            viu de perto o título mundial da Albiceleste.viu de perto o título mundial da Albiceleste.Apesar de pouco
+            ter jogado na Argentina (atuou só por Lanús, Chacarita Jrs e Colón no país)
+            , Cano passou a ser mais conhecido em sua terra natal após se destacar no futebol
+            colombiano e, principalmente, no brasileiro. Inclusive na temporada passada, quando marcou
+            44 gols, o atacante foi tema de debate em programas esportivos locais se merecia uma vaga
+            na seleção argentina na Copa do Mundo. Ele não foi convocado, mas esteve no Catar e
+            viu de perto o título mundial da Albicelesteviu de perto o título mundial da Albiceleste.Apesar de pouco ter
+            jogado na Argentina (atuou só por Lanús, Chacarita Jrs e Colón no país)
+            , Cano passou a ser mais conhecido em sua terra natal após se destacar no futebol
+            colombiano e, principalmente, no brasileiro. Inclusive na temporada passada, quando marcou
+            44 gols, o atacante foi tema de debate em programas esportivos locais se merecia uma vaga
+            na seleção argentina na Copa do Mundo. Ele não foi convocado, mas esteve no Catar e
+            viu de perto o título mundial da Albiceleste</p>
+    </div>
+    <style>
+        .conteudo span {
+            font-size: 15px;
+            cursor: pointer;
+            padding: 0 10px;
+        }
+
+        .conteudo p {
+            overflow: hidden;
+            font-size: 13px;
+            height: 50px;
+            padding: 10 10;
+            transition: 1s;
+        }
+        .mostrar{
+            height: 200px !important;
+        }
+    </style>
+</body>
+<script>
+    var span = document.querySelector('.conteudo span');
+
+    span.addEventListener('click', function () {
+        var conteudo = document.querySelector('.conteudo p');
+        if(conteudo.classList.contains('mostrar')){
+            span.innerHTML='Mostrar mais...';
+            conteudo.classList.remove('mostrar');
+        }else{span.innerHTML = 'Mostrar menos';
+            conteudo.classList.add('mostrar'); }
+    })
+
+</script>
+
+</html>
