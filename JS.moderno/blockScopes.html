@@ -1,0 +1,30 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+        {
+            //Vai ficar definido apenas neste escopo.
+            let nome = 'Matheus';
+            console.log(nome);
+
+           /* var animal = 'cachorro';
+            
+            function aluno(){
+                var aluno = 'Joao';
+                console.log(aluno);
+                
+            } */
+
+            let testes = function(){ //Fazendo isso consigo fazer com que a function funcione apenas dentro do escopo.
+                console.log(nome);
+            }
+        }
+
+       /* console.log(nome); //Fora do escopo a variável não tem definição.*/
+
+        console.log(animal); //Mesmo estando dentro do escopo, por ser uma 'var', ela é global e funciona fora.
+
+        aluno(); // A 'function' também tem caráter global.
+    </script>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+        //Spread:
+        /*
+        var nomes = [
+            {
+                nome:'João'
+            },
+            {
+                nome: 'Carlos'
+            }
+        ]
+        const objetos = [...nomes,{
+            nome:'Guilherme'
+        }];
+
+        console.log(objetos);
+        //Ao invés de chamar função no objeto, eu crio uma array e chamo através do '...' -> consigo chamar todos.
+        */
+
+        //Rest:
+        function testes(...nomes){ //O 'nomes' vira um tipo de array; 
+            console.log(nomes);
+        }
+             /*testes(1,2,3,4,5);*/
+        //Consigo, através dos parâmetros, transformá-los num formato de array.
+        //EX:
+        /*testes('Matheus','João', 'Marcos');*/
+
+        //Mas há também como passar um array dentro, tranformando em um array dentro de outro:
+        testes(['Matheus',2,3,4,5,6]);
+        console.log(nomes[1][1]); //Printa o 'Matheus'
+
+    </script>
+</html>

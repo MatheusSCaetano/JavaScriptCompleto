@@ -1,0 +1,31 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+        //Nova forma de declarar funções:
+        const teste = (parametro) =>{
+            alert(parametro);
+        }
+        teste('Olá mundo');
+
+
+        //Utilizar uma função como parâmetro:
+        const teste_2 = (parametro) =>{
+            parametro(); // Função 'parametro' que será utilizada como parâmetro como podemos ver acima.
+        }
+        teste_2(()=>{ //Podemos ver que o parâmetro da function é uma outra function.
+            alert('Olá mundo!!');
+        });
+
+        //Arrow Function:
+
+        const teste_3 =(texto,parametro1) =>{
+            parametro1(texto);
+        }
+
+        teste_3('Olá mundo!', (texto)=>{
+            alert(texto);
+        });
+    </script>
+</html>
